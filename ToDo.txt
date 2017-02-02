@@ -1,0 +1,30 @@
+TODO:
+
+- v1.0 done
+- v2.0 calc odds on every turn
+
+--------------------------------------------------
+
+x calculate winner, get high and kicker
+x dimm loser cards, hilight winner's
+x rotate players cards a bit
+x nice app icon, aces on green cloth
+x keep game in neverending loop
+x cards too big, reduce them
+x randomizer not working, fix it
+x launch screen
+x align cards, fix to top, bottom and middle
+x show message
+x tap for actions
+x show house cards
+x show players cards
+x deal random cards
+x player class
+x deck class
+x card class
+x face down red and blue
+x cards ace to king
+x table cloth
+
+
+End
