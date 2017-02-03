@@ -1,8 +1,10 @@
-# POKER HAND 1.0 - iPad
+![App Icon](https://raw.githubusercontent.com/kuyawa/Gallery/master/PokerHand/appicon.png)
 
-## A simple Texas Hold'em game to test your skils
+# POKER HAND 1.0 (iPad only)
+
+## A simple Texas Hold'em dealer for learning
 
 ### Screenshot
 
-Here...
+![Screenshot](https://raw.githubusercontent.com/kuyawa/Gallery/master/PokerHand/screenshot.jpg)
 
