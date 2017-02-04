@@ -19,11 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cloth" translatesAutoresizingMaskIntoConstraints="NO" id="K2A-0B-d8M">
-                                <frame key="frameInset" minX="-1" minY="-1" maxX="-2" maxY="-1"/>
+                                <frame key="frameInset" minX="-1" minY="-2" maxX="-2"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bd9-aU-tCg">
-                                <frame key="frameInset" minX="47.83%" minY="47.91%" width="722" height="233"/>
+                                <frame key="frameInset" minX="100.00%" minY="47.79%" width="723" height="233"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_green" translatesAutoresizingMaskIntoConstraints="NO" id="WZs-FQ-hS7">
@@ -50,7 +50,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ynd-09-aAg">
-                                <frame key="frameInset" minX="49.39%" width="357" height="229" maxY="56"/>
+                                <frame key="frameInset" minX="49.27%" width="356" height="230" maxY="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_green" translatesAutoresizingMaskIntoConstraints="NO" id="A10-PF-N5l">
@@ -65,7 +65,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bOF-q2-Glz">
-                                <frame key="frameInset" minX="49.39%" minY="20" width="357" height="230"/>
+                                <frame key="frameInset" minX="49.27%" minY="20" width="356" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="empty_green" translatesAutoresizingMaskIntoConstraints="NO" id="ag8-xf-rS2">
@@ -80,7 +80,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73y-JW-D0s">
-                                <frame key="frameInset" minX="-3" height="39" maxY="2"/>
+                                <frame key="frameInset" minX="-4" height="39" maxY="3"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -89,6 +89,22 @@
                                 </state>
                                 <connections>
                                     <action selector="onPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eoL-cj-YBz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6a-rf-MrX">
+                                <frame key="frameInset" width="83" height="81" maxY="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="button_deal_left"/>
+                                <connections>
+                                    <action selector="onPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pxy-OG-clr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r4h-2a-X32">
+                                <frame key="frameInset" width="83" height="81" maxX="-2" maxY="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" image="button_deal_right"/>
+                                <connections>
+                                    <action selector="onPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="svh-El-UGY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,6 +129,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button_deal_left" width="83" height="81"/>
+        <image name="button_deal_right" width="83" height="81"/>
         <image name="cloth" width="1280" height="1280"/>
         <image name="empty_green" width="109" height="144"/>
     </resources>

@@ -30,6 +30,7 @@ struct Results {
     var suit    = Suit.none
     var message = ""
     
+    // For debugging
     var description: String {
         let cards1 = best1.map{ $0.description }.joined(separator: " ")
         let cards2 = best2.map{ $0.description }.joined(separator: " ")
@@ -43,6 +44,7 @@ struct Results {
         + " Text: \(message)"
     }
     
+    // For highlighting card
     func hasWinningCard(_ card: Card) -> Bool {
         return cards.contains{ each in
             return card.description == each.description
@@ -154,6 +156,7 @@ class Winner {
         return "0" + score
     }
     
+    // For calculating best hand, hex ranks E:ace D:king .. 2:two 1:ace
     func getHandRanks(_ hand: Cards) -> [String] {
         var ranks: [String] = [String]()
         
@@ -170,12 +173,7 @@ class Winner {
         return ranks
     }
     
-    func getHandSuits(_ hand: Cards) -> [String] {
-        let suits = hand.map{ $0.suitText }
-        
-        return suits
-    }
-    
+    // Get 9..0 where 9=royalflush .. 0=rankhigh
     func getScoreFromPoints(_ score: String) -> WinningHand {
         guard let char = score.characters.first,
               let max  = Int(String(char))
@@ -239,19 +237,6 @@ class Winner {
         return unique
     }
 
-    /*
-    // Highest rank in kind
-    func getHighRank(_ points: String) -> Rank {
-        
-        let ranks = points.characters.map{ String($0) }
-        let high = ranks[1]
-        let face = FaceLetter.index(of: high)
-        let rank = Rank(rawValue: face!)
-        
-        return rank!
-    }
-    */
-    
     func getHighRanks(_ points: String) -> (Rank, Rank) {
         
         let ranks = points.characters.map{ String($0) }

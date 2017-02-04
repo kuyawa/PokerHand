@@ -12,15 +12,12 @@ class ViewController: UIViewController {
 
     enum Action { case deal, flop, turn, river, final }
     
-    var action: Action = .deal
-    
-    var player1 = Player("John Dillinger")
-    var player2 = Player("Jesse James")
-    var table   = Cards()
-    
-    var deck = Deck()
-    
-    var slotImage = "empty_green"
+    var action    = Action.deal
+    var player1   = Player("John Dillinger")
+    var player2   = Player("Jesse James")
+    var table     = Cards()
+    var deck      = Deck()
+    var blank     = "empty_green"
     
     @IBOutlet weak var player1_card1: UIImageView!
     @IBOutlet weak var player1_card2: UIImageView!
@@ -68,17 +65,17 @@ class ViewController: UIViewController {
     }
     
     func clearTable() {
-        setCardImage(player1_card1, name: slotImage)
-        setCardImage(player1_card2, name: slotImage)
+        setCardImage(player1_card1, name: blank)
+        setCardImage(player1_card2, name: blank)
 
-        setCardImage(player2_card1, name: slotImage)
-        setCardImage(player2_card2, name: slotImage)
+        setCardImage(player2_card1, name: blank)
+        setCardImage(player2_card2, name: blank)
 
-        setCardImage(table_card1, name: slotImage)
-        setCardImage(table_card2, name: slotImage)
-        setCardImage(table_card3, name: slotImage)
-        setCardImage(table_card4, name: slotImage)
-        setCardImage(table_card5, name: slotImage)
+        setCardImage(table_card1, name: blank)
+        setCardImage(table_card2, name: blank)
+        setCardImage(table_card3, name: blank)
+        setCardImage(table_card4, name: blank)
+        setCardImage(table_card5, name: blank)
     }
 
     func playGame() {
@@ -228,3 +225,5 @@ class ViewController: UIViewController {
     
 }
 
+
+// End

@@ -5,6 +5,7 @@ TODO:
 
 --------------------------------------------------
 
+x deal buttons on both sides
 x calculate winner, get high and kicker
 x dimm loser cards, hilight winner's
 x rotate players cards a bit

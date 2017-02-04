@@ -21,13 +21,10 @@ class Player {
         self.name = name
     }
     
-    func bestHand() -> String {
-        // TODO:
-        return ""
-    }
-    
     func clearHand() {
         hand = (Card(.none, .none), Card(.none, .none))
         handValue = ""
     }
 }
+
+// End
