@@ -8,3 +8,8 @@
 
 ![Screenshot](https://raw.githubusercontent.com/kuyawa/Gallery/master/PokerHand/screenshot.jpg)
 
+### Available
+
+If you like what you see, [hire me!](mailto:haxapp@gmail.com)
+
+Or donate via [Patreon](https://www.patreon.com/kuyawa) so I can develop more projects you like!
